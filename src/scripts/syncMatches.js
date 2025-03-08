@@ -21,7 +21,7 @@ const saveMatchs = async(journey) => {
     });
 
     const [savedMatch] = await Match.findOrCreate({
-      where: { date: match.strTimestamp, stadium: strVenue },
+      where: { date: match.strTimestamp, stadium: match.strVenue },
       defaults: {
         score_home: match.intHomeScore,
         score_away: match.intAwayScore,
