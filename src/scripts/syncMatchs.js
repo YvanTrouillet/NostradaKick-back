@@ -1,5 +1,5 @@
 import { Match, Competition, Team } from "../models/associations.js";
-import fetchMatch from "../modules/matchService";
+import fetchMatch from "../modules/matchService.js";
 
 const saveMatchs = async(journey) => {
     const matches = await fetchMatch(journey);
