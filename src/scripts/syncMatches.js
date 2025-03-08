@@ -30,7 +30,8 @@ const saveMatchs = async(journey) => {
       }
     });
 
-    await savedMatch.addTeams([homeTeam, awayTeam]);
+    await savedMatch.addTeam(homeTeam); // ajoute une équipe
+    await savedMatch.addTeam(awayTeam);
     }
     console.log("Les matchs de la journée ont été sauvegardé en BDD");
     
