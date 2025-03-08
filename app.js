@@ -13,7 +13,7 @@ import { syncAllMatches } from "./src/scripts/syncMatches.js";
 
 const app = express();
 
-// syncAllMatches();
+syncAllMatches();
 
 // Middleware pour lire les json
 app.use(express.json());
