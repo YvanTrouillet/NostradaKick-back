@@ -9,8 +9,11 @@ import { authentificationRouter } from "./src/routers/authentification.router.js
 import expressSanitizer from "express-sanitizer";
 import cors from "cors";
 import { notFound, errorHandler } from "./src/Middlewares/error.middleware.js";
+import { syncAllMatches } from "./src/scripts/syncMatches.js";
 
 const app = express();
+
+syncAllMatches();
 
 // Middleware pour lire les json
 app.use(express.json());

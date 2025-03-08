@@ -42,12 +42,4 @@ const syncAllMatches = async () => {
     }
 };
 
-syncAllMatches()
-  .then(() => {
-    console.log('Synchronisation complète.');
-    process.exit();
-  })
-  .catch((err) => {
-    console.error('Erreur lors de la synchronisation:', err);
-    process.exit(1);
-  });
+export { syncAllMatches };
