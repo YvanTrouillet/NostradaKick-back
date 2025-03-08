@@ -7,8 +7,8 @@
 	"scripts": {
 		"dev": "node --watch app.js",
 		"db:create": "PGPASSWORD=CwDldaXFhXQvl0iNh3trqtcP9LNwWNVm psql -h dpg-cv64qgan91rc73bbh9jg-a.frankfurt-postgres.render.com -U nostra nostra -f ./data/create_table.sql",
-		"db:seed": "psql -U nostra -d nostra -f ./data/seed_database.sql",
-		"db:migration": "psql -U nostra -d nostra -f ./data/migration_database.sql",
+		"db:seed": "PGPASSWORD=CwDldaXFhXQvl0iNh3trqtcP9LNwWNVm psql -h dpg-cv64qgan91rc73bbh9jg-a.frankfurt-postgres.render.com -U nostra nostra -f ./data/seed_database.sql",
+		"db:migration": "PGPASSWORD=CwDldaXFhXQvl0iNh3trqtcP9LNwWNVm psql -h dpg-cv64qgan91rc73bbh9jg-a.frankfurt-postgres.render.com -U nostra nostra -f ./data/migration_database.sql",
 		"db:reset": "npm run db:create && npm run db:seed && npm run db:migration"
 	},
 	"author": "Abdel Zahri - Abdelhak Es-shih - Guillaume Lemoigne - Fabien Gensane - Yvan Trouillet",
