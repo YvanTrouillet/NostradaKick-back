@@ -30,6 +30,11 @@ app.use(
 	}),
 );
 
+// Test serveur
+app.get('/ping', (req, res) => {
+  res.send('Pong');
+});
+
 // Route
 app.use(matchRouter);
 app.use(predictionRouter);
