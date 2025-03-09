@@ -3,7 +3,7 @@ import fetchMatch from "../modules/matchService.js";
 
 const saveMatchs = async(journey) => {
     const matches = await fetchMatch(journey);
-
+  if (matches.lenght <= 0) return;
     for (const match of matches) {
             const [competition] = await Competition.findOrCreate({
       where: { name: match.strLeague.slice(7), season: match.strSeason },
@@ -38,7 +38,7 @@ const saveMatchs = async(journey) => {
 }
 
 const syncAllMatches = async () => {
-    for (let index = 1; index < 38; index++) {
+    for (let index = 1; index < 34; index++) {
         await saveMatchs(index)       
     }
 };
