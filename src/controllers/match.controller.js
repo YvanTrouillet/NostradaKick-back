@@ -132,6 +132,26 @@ const matchController = {
 			return next(error);
 		}
 	},
+
+	patchMatchAPI: async (data) => {
+		try {
+			const match = await Match.findOne({
+				where: {
+					date: data.strTimestamp,
+					stadium: data.strVenue
+				}
+			})
+			
+			match.score_home = data.intHomeScore;
+			match.score_away = data.intAwayScore;
+
+			match.save()
+
+		} catch (error) {
+			console.error(error);
+			
+		}
+	}
 };
 
 export default matchController;

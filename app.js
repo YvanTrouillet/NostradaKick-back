@@ -14,6 +14,7 @@ import { syncAllMatches } from "./src/scripts/syncMatches.js";
 const app = express();
 
 syncAllMatches();
+scheduleTasks();
 
 // Middleware pour lire les json
 app.use(express.json());
