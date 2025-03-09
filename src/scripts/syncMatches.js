@@ -25,7 +25,7 @@ const saveMatchs = async(journey) => {
       defaults: {
         score_home: match.intHomeScore,
         score_away: match.intAwayScore,
-        outcome: match.intHomeScore > match.intAwayScore ? "home": match.intHomeScore < match.intAwayScore ? "away":"null",
+        outcome: match.intHomeScore > match.intAwayScore ? "home": match.intHomeScore < match.intAwayScore ? "away":"neutral",
         competition_id: competition.competition_id
       }
     });
