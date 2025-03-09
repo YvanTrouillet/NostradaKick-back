@@ -1,7 +1,7 @@
 import cron from 'node-cron';
-import fetchMatch  from "./modules/matchService";
-import matchController from "./controllers/match.controller";
-import getLigue1Matchday from "./modules/journeyLeagueOne";
+import fetchMatch  from "./modules/matchService.js";
+import matchController from "./controllers/match.controller.js";
+import getLigue1Matchday from "./modules/journeyLeagueOne.js";
 
 const scheduleTasks = () => {
   // Planifie la synchronisation toutes les 14 minutes
