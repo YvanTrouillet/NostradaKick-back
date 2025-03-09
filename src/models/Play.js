@@ -12,11 +12,11 @@ Play.init(
 		  },
 		match_id: {
 			type: DataTypes.INTEGER,
-			primaryKey: true,
+			allowNull: false,
 		},
 		team_id: {
 			type: DataTypes.INTEGER,
-			primaryKey: true,
+			allowNull: false,
 		},
 		role: {
 			type: DataTypes.STRING,
