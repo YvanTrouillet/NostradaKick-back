@@ -1,5 +1,4 @@
 import cron from 'node-cron';
-import { saveMatches } from './services/matchService';
 import fetchMatch  from "./modules/matchService";
 import matchController from "./controllers/match.controller";
 import getLigue1Matchday from "./modules/journeyLeagueOne";
