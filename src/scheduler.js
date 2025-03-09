@@ -24,5 +24,5 @@ const scheduleTasks = () => {
   console.log('✅ Le planificateur est actif. Les tâches sont programmées.');
 };
 
-module.exports = { scheduleTasks };
+export { scheduleTasks };
 

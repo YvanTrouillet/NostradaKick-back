@@ -10,6 +10,8 @@ import expressSanitizer from "express-sanitizer";
 import cors from "cors";
 import { notFound, errorHandler } from "./src/Middlewares/error.middleware.js";
 import { syncAllMatches } from "./src/scripts/syncMatches.js";
+import { scheduleTasks } from "./src/scheduler.js";
+
 
 const app = express();
 
