@@ -23,6 +23,7 @@ matchRouter.get(
 	matchController.getUpcomingMatchPredictions,
 );
 
+matchRouter.get('patch/results', matchController.patchMatch);
 // La route de notre API de consultation des informations (principalement le résultat) des matchs de football en cours
 matchRouter.get("/api/inplay");
 
