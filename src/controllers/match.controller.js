@@ -1,6 +1,6 @@
 import { Op } from "sequelize";
 import { Match } from "../models/associations.js";
-import fetchMatch from "../modules/
+import fetchMatch from "../modules/matchServices.js";
 
 const currentDate = new Date();
 
@@ -133,9 +133,11 @@ const matchController = {
 			return next(error);
 		}
 	},
-
+// a finir
 	patchMatchAPI: async () => {
-		const date = await fetchMatch();
+		for (let index = 1, index < 34, index++){
+		const date = await fetchMatch(index);
+		}
 		try {
 			const match = await Match.findOne({
 				where: {
