@@ -12,7 +12,7 @@ const saveMatchs = async(journey) => {
 
     const [homeTeam] = await Team.findOrCreate({
       where: { name: match.strHomeTeam },
-      defaults: { country: match.strCountry, city: match.strHomeTeam, logo: match.strHomeTeamBadge }
+      defaults: { country: match.strCountry, city: match.strHomeTeam, logo: match.strHomeTeamBadge.split("\").join("")}
     });
 
     const [awayTeam] = await Team.findOrCreate({
