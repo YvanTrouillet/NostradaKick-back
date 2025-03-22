@@ -135,9 +135,6 @@ const matchController = {
 	},
 // a finir
 	patchMatchAPI: async () => {
-		for (let index = 1, index < 34, index++){
-		const date = await fetchMatch(index);
-		}
 		try {
 			const match = await Match.findOne({
 				where: {
