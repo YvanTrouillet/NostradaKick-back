@@ -1,6 +1,5 @@
 import { Op } from "sequelize";
 import { Match } from "../models/associations.js";
-import fetchMatch from "../modules/matchServices.js";
 
 const currentDate = new Date();
 
