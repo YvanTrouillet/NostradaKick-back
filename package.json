@@ -6,9 +6,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "node --watch app.js",
-		"db:create": "PGPASSWORD=CwDldaXFhXQvl0iNh3trqtcP9LNwWNVm psql -h dpg-cv64qgan91rc73bbh9jg-a.frankfurt-postgres.render.com -U nostra nostra -f ./data/create_table.sql",
-		"db:seed": "PGPASSWORD=CwDldaXFhXQvl0iNh3trqtcP9LNwWNVm psql -h dpg-cv64qgan91rc73bbh9jg-a.frankfurt-postgres.render.com -U nostra nostra -f ./data/seed_database.sql",
-		"db:migration": "PGPASSWORD=CwDldaXFhXQvl0iNh3trqtcP9LNwWNVm psql -h dpg-cv64qgan91rc73bbh9jg-a.frankfurt-postgres.render.com -U nostra nostra -f ./data/migration_database.sql",
+		"db:create": "PGPASSWORD=TkVyGve0SuMF1XWVabV2aQqaBspZvdBm psql -h dpg-d04dn3a4d50c73a33pqg-a.frankfurt-postgres.render.com -U nostra nostra_s5ts -f ./data/create_table.sql",
+		"db:seed": "PGPASSWORD=TkVyGve0SuMF1XWVabV2aQqaBspZvdBm psql -h dpg-d04dn3a4d50c73a33pqg-a.frankfurt-postgres.render.com -U nostra nostra_s5ts -f ./data/seed_database.sql",
+		"db:migration": "PGPASSWORD=TkVyGve0SuMF1XWVabV2aQqaBspZvdBm psql -h dpg-d04dn3a4d50c73a33pqg-a.frankfurt-postgres.render.com -U nostra nostra_s5ts -f ./data/migration_database.sql",
 		"db:reset": "npm run db:create && npm run db:seed && npm run db:migration"
 	},
 	"author": "Abdel Zahri - Abdelhak Es-shih - Guillaume Lemoigne - Fabien Gensane - Yvan Trouillet",
