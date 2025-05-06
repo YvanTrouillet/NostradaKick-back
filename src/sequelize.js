@@ -9,6 +9,9 @@ const sequelize = new Sequelize(process.env.DB_URL, {
 		createdAt: "created_at",
 		updatedAt: "updated_at",
 	},
+	ssl: {
+    		rejectUnauthorized: false
+ 	}
 });
 
 export  {sequelize};
