@@ -10,7 +10,6 @@ Bienvenue dans le backend de **NostradaKick** ! Cette partie du projet gère tou
 - **Express** : Framework minimaliste pour gérer les routes et les middlewares.
 - **PostgreSQL** : Base de données relationnelle robuste et fiable.
 - **Sequelize** : ORM pour simplifier les requêtes SQL et la gestion des tables.
-- **Docker** : Conteneurisation pour assurer la cohérence des environnements.
 
 ## 📡 Installation
 
