@@ -10,6 +10,7 @@ const sequelize = new Sequelize(process.env.DB_URL, {
 		updatedAt: "updated_at",
 	},
 	ssl: {
+		require: true,
     		rejectUnauthorized: false
  	}
 });
