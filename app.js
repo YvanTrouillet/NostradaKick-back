@@ -15,7 +15,7 @@ import { scheduleTasks } from "./src/scheduler.js";
 
 const app = express();
 
-syncAllMatches();
+//syncAllMatches();
 scheduleTasks();
 
 // Middleware pour lire les json
