@@ -9,7 +9,7 @@
 		"db:create": "PGPASSWORD=xYptXTsU9gmGUcN2clQx8xEnLrxml0Mq psql -h dpg-d0cvqfidbo4c73ftj11g-a.frankfurt-postgres.render.com -U bdd_nostradakick_user bdd_nostradakick -f ./data/create_table.sql",
 		"db:seed": "PGPASSWORD=xYptXTsU9gmGUcN2clQx8xEnLrxml0Mq psql -h dpg-d0cvqfidbo4c73ftj11g-a.frankfurt-postgres.render.com -U bdd_nostradakick_user bdd_nostradakick -f ./data/seed_database.sql",
 		"db:migration": "PGPASSWORD=xYptXTsU9gmGUcN2clQx8xEnLrxml0Mq psql -h dpg-d0cvqfidbo4c73ftj11g-a.frankfurt-postgres.render.com -U bdd_nostradakick_user bdd_nostradakick -f ./data/migration_database.sql",
-		"db:reset": "npm run db:create && npm run db:seed && npm run db:migration"
+		"db:reset": "npm run db:create && npm run db:migration && npm run db:seed"
 	},
 	"author": "Abdel Zahri - Abdelhak Es-shih - Guillaume Lemoigne - Fabien Gensane - Yvan Trouillet",
 	"license": "ISC",
